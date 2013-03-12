@@ -1,0 +1,11 @@
+<h3>About Me</h3>
+
+<p>I am a husband, father, web developer, and technologist. This is my site, built using Jekyll and hosted at github.com.</p>
+
+<h3>Recent Posts</h3>
+
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
