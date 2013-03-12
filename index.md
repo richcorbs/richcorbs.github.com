@@ -4,6 +4,6 @@ layout: default
 ---
 # Hello World
 
-## Howdy
+## Where ever you go, there you are.
 
-### This is my web site.
+### This is my web site and it is a work in progress.
