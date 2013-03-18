@@ -325,4 +325,6 @@ Cronic looks just about perfect for our needs right out of the box. It supports 
 
 I didn't intend to stack the deck for Cronic but in the end the analysis made it seem that way. Hopefully this was helpful. I can't wait to get started with Cronic.
 
-<a href="https://github.com/richcorbs/richcorbs.github.com/issues/new" class="btn btn-mini btn-info">Feedback</a>
+I didn't intentionally misrepresent anything. I you see something that isn't right let me know.
+
+<a href="https://github.com/richcorbs/Feedback/issues/new" class="btn btn-mini btn-info">Feedback</a>
