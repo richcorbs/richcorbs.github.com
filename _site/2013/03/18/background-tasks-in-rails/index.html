@@ -77,14 +77,14 @@ ript>
 
 <ul>
 <li>Potential overlap</li>
-<li>Not integrated with our exception handling solution</li>
+<li>Not integrated with our exception handling solution (<a href="airbrake.io">Airbrake</a>).</li>
 <li>Disconnected from our codebase</li>
 </ul>
 
 
-<h2>Constraints on the solution</h2>
+<h2>Requirements and Constraints</h2>
 
-<p>These are the requirements/constraints on our solution:</p>
+<p>These are the requirements/constraints for our solution:</p>
 
 <ul>
 <li>It must handle queues AND crons.</li>
@@ -98,16 +98,16 @@ ript>
 
 <h2>The Contenders</h2>
 
-<p>I reviewed a few possibilities and this is what I found.</p>
+<p>I considered the following possibilities.</p>
 
 <ul>
-<li>current solution</li>
-<li>"whenever" gem</li>
-<li>"delayed_job" gem</li>
-<li>"resque" solution</li>
-<li>"rufus-scheduler" gem</li>
+<li>current solution (do nothing)</li>
+<li>"<a href="https://github.com/javan/whenever">whenever</a>" gem</li>
+<li>"<a href="https://github.com/collectiveidea/delayed_job">delayed_job</a>" gem</li>
+<li>"<a href="https://github.com/defunkt/resque">resque</a>" solution</li>
+<li>"<a href="https://github.com/jmettraux/rufus-scheduler">rufus-scheduler</a>" gem</li>
 <li>"custom daemon" solution</li>
-<li>"cronic" gem airbrake, cap role startup...</li>
+<li>"<a href="https://github.com/jkraemer/cronic">cronic</a>" gem</li>
 </ul>
 
 
@@ -247,7 +247,7 @@ ript>
 </table>
 
 
-<p>So everything looks good so far. Running separately would require some kind of daemon to manage. It has built-in configurable overlap prevention. Rufus requires manual exception configuration. Rufus is looking pretty good.</p>
+<p>So everything looks good so far. Running separately would require some kind of daemon to manage. It has built-in configurable overlap prevention. Rufus requires manual exception configuration and provides working examples. Rufus is looking pretty good.</p>
 
 <h3>Custom Daemon</h3>
 
@@ -399,10 +399,6 @@ ript>
 <ul>
   
     <li><a href="/2013/03/18/background-tasks-in-rails/">Background Tasks In Rails</a></li>
-  
-    <li><a href="/2013/02/15/this-is-another-test/">Consectetur Elit</a></li>
-  
-    <li><a href="/2013/02/01/this-is-a-test/">Lorem Ipsum Dolor Sit Amet</a></li>
   
 </ul>
 

@@ -33,12 +33,12 @@ Any time we need to view or make a change to the background processes (which isn
 ### Summary of Problems
 
 - Potential overlap
-- Not integrated with our exception handling solution
+- Not integrated with our exception handling solution ([Airbrake](airbrake.io)).
 - Disconnected from our codebase
 
-## Constraints on the solution
+## Requirements and Constraints
 
-These are the requirements/constraints on our solution:
+These are the requirements/constraints for our solution:
 
 - It must handle queues AND crons.
 - It must run separately from the web app.
@@ -49,15 +49,15 @@ These are the requirements/constraints on our solution:
 
 ## The Contenders
 
-I reviewed a few possibilities and this is what I found.
+I considered the following possibilities.
 
-- current solution
-- "whenever" gem
-- "delayed_job" gem
-- "resque" solution
-- "rufus-scheduler" gem
+- current solution (do nothing)
+- "[whenever](https://github.com/javan/whenever)" gem
+- "[delayed_job](https://github.com/collectiveidea/delayed_job)" gem
+- "[resque](https://github.com/defunkt/resque)" solution
+- "[rufus-scheduler](https://github.com/jmettraux/rufus-scheduler)" gem
 - "custom daemon" solution
-- "cronic" gem airbrake, cap role startup...
+- "[cronic](https://github.com/jkraemer/cronic)" gem
 
 ### Current Solution
 
@@ -190,7 +190,7 @@ Rufus Scheduler is a gem for scheduling pieces of code to run AT a certain time,
   </tr>
 </table>
 
-So everything looks good so far. Running separately would require some kind of daemon to manage. It has built-in configurable overlap prevention. Rufus requires manual exception configuration. Rufus is looking pretty good.
+So everything looks good so far. Running separately would require some kind of daemon to manage. It has built-in configurable overlap prevention. Rufus requires manual exception configuration and provides working examples. Rufus is looking pretty good.
 
 ### Custom Daemon
 
