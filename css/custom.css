@@ -1,0 +1,11 @@
+body {
+  color: #555;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbar {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
