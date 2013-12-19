@@ -2,7 +2,7 @@
 layout: post
 ---
 
-_Update: I tried to install cronic in my Rails app and it failed because cronic requires Rails 3.2.13+. I'm now investigating daemon-kit_
+_Update: I tried to install cronic in my Rails app and it failed because cronic requires Rails 3.2.13+. I'm now investigating daemon-kit._
 
 The problem addressed in this post has to do with managing background jobs in an existing rails 2.3.x app. The focus of this article is decidedly NOT how we got to this point but how can we fix it now. The app has background processing in the form of a homegrown queue mechanism ("queue") and 100+ cron jobs ("cron"). I try to document our current problems and my thought process and reasoning as I consider the options available.
 
